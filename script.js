@@ -114,20 +114,20 @@ async function setupPlayer() {
       
 
       // Crea todos los botones de los canales
-      channelList.forEach((e, i) => {
-        const btn = document.createElement("button");
-        const cnImage = document.createElement("img");
-        cnImage.src = '/canales/logos/' + (e.img || 'canal.webp');
-        const cnName = document.createElement("span");
-        cnName.innerText = e.name || atob(e.getURL).replaceAll("_", " ");
-        const cnNumber = document.createElement("span");
-        cnNumber.innerText = i + 1;
-        btn.appendChild(cnImage);
-        btn.appendChild(cnName);
-        btn.appendChild(cnNumber);
-        btn.setAttribute("getURL", e.getURL);
-        btn.setAttribute("tabindex", 0);
-        document.querySelector(".channelList").appendChild(btn);
+     channelList.forEach((e, i) => {
+    const btn = document.createElement("button");
+    const cnImage = document.createElement("img");
+    cnImage.src = 'https://mac-donal.github.io/canales/logos/' + (e.img || 'canal.webp');
+    const cnName = document.createElement("span");
+    cnName.innerText = e.name || atob(e.getURL).replaceAll("_", " ");
+    const cnNumber = document.createElement("span");
+    cnNumber.innerText = i + 1;
+    btn.appendChild(cnImage);
+    btn.appendChild(cnName);
+    btn.appendChild(cnNumber);
+    btn.setAttribute("getURL", e.getURL);
+    btn.setAttribute("tabindex", 0);
+    document.querySelector(".channelList").appendChild(btn);
       });
 
       // Cambiar canales con flechas (↑) (↓)
