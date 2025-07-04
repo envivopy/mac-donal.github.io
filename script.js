@@ -111,13 +111,13 @@ async function setupPlayer() {
       programInfoElement.append(programImageContainer)
       programInfoElement.append(programInfoTitleContainer)
       player.append(programInfoElement)
-      
+      https://raw.githubusercontent.com/envivopy/mac-donal.github.io/refs/heads/main/canales/logos/a24.webp
 
       // Crea todos los botones de los canales
      channelList.forEach((e, i) => {
     const btn = document.createElement("button");
     const cnImage = document.createElement("img");
-    cnImage.src = '/canales/canales/logos/' + (e.img || 'canal.webp');
+    cnImage.src = '/canales/logos/' + (e.img || 'canal.webp');
     const cnName = document.createElement("span");
     cnName.innerText = e.name || atob(e.getURL).replaceAll("_", " ");
     const cnNumber = document.createElement("span");
